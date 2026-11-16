@@ -47,7 +47,18 @@ patients = {
     },
 }
 
-thresholds = [0, 0.0001, 0.001, 0.01, 0.1]
+thresholds = [
+    0,
+    0.000001,
+    0.00001,
+    0.0001,
+    0.001,
+    0.01,
+    0.05,
+    0.1,
+    0.3,
+    0.5,
+]
 
 def calculate_score(rules):
     if not rules:
@@ -67,7 +78,13 @@ for name, patient in patients.items():
     memberships = fuzzify_patient_gaussian(patient)
     rules = evaluate_all_rules(memberships)
 
+    maximum_strength = max(
+        (rule["Strength"] for rule in rules),
+        default=0.0,
+    )
+
     print(f"\n{name}")
+    print("En yuksek etkinlik:", maximum_strength)
     print("-" * 55)
 
     for threshold in thresholds:
@@ -85,7 +102,7 @@ for name, patient in patients.items():
             score_text = f"{score:.4f}"
 
         print(
-            f"Esik: {threshold:.4f} | "
+            f"Esik: {threshold:.6f} | "
             f"Kural: {len(filtered):4d} | "
             f"Skor: {score_text}"
         )
