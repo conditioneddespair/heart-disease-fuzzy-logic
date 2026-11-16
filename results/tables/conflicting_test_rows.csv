@@ -1,0 +1,13 @@
+Antecedent (If Condition),Consequent (Output)
+ChestPain = NonAnginal AND HbA1c = Healthy AND HDL = Healthy AND LDL = HIgh AND HeartRate = Healthy AND Age = Mid AND BloodPressure = Normal,LowRisk
+ChestPain = Typical AND HbA1c = Healthy AND HDL = Low AND LDL = XHIgh AND HeartRate = High AND Age = Mid AND BloodPressure = High,HighRisk
+ChestPain = Typical AND HbA1c = Healthy AND HDL = Healthy AND LDL = XHIgh AND HeartRate = Healthy AND Age = Mid AND BloodPressure = High,LowRisk
+ChestPain = Typical AND HbA1c = High AND HDL = Low AND LDL = XHIgh AND HeartRate = Healthy AND Age = Mid AND BloodPressure = High,HighRisk
+ChestPain = Typical AND HbA1c = Healthy AND HDL = Low AND LDL = VeryHIgh AND HeartRate = Healthy AND Age = Old AND BloodPressure = Normal,HighRisk
+ChestPain = Typical AND HbA1c = Healthy AND HDL = Healthy AND LDL = XHIgh AND HeartRate = Healthy AND Age = Mid AND BloodPressure = High,LowRisk
+ChestPain = Typical AND HbA1c = Healthy AND HDL = Low AND LDL = XHIgh AND HeartRate = High AND Age = Mid AND BloodPressure = High,MediumRisk
+ChestPain = Typical AND HbA1c = Healthy AND HDL = Healthy AND LDL = XHIgh AND HeartRate = Healthy AND Age = Mid AND BloodPressure = High,LowRisk
+ChestPain = Typical AND HbA1c = Healthy AND HDL = Low AND LDL = VeryHIgh AND HeartRate = Healthy AND Age = Old AND BloodPressure = Normal,MediumRisk
+ChestPain = Typical AND HbA1c = High AND HDL = Low AND LDL = XHIgh AND HeartRate = Healthy AND Age = Mid AND BloodPressure = High,MediumRisk
+ChestPain = NonAnginal AND HbA1c = Healthy AND HDL = Healthy AND LDL = HIgh AND HeartRate = Healthy AND Age = Mid AND BloodPressure = Normal,Healthy
+ChestPain = Typical AND HbA1c = Healthy AND HDL = Healthy AND LDL = XHIgh AND HeartRate = Healthy AND Age = Mid AND BloodPressure = High,MediumRisk
